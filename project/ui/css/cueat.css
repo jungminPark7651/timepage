@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+.cueat_001 {
+  width: 100%;
+  height: 100vh;
+  background: #ffe54d;
+}
+.cueat_001_container {
+  width: 1596px;
+  margin: 0 auto;
+}
+.cueat_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 140px;
+}
+.cueat_logo {
+  width: 252px;
+  height: 54px;
+  background: url(../images/cueat_logo.png) center center / 100% auto no-repeat;
+  object-fit: cover;
+}
+.cueat_title_bold {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #232323;
+}
+.cueat_title_regular {
+  font-size: 40px;
+  font-weight: 300;
+  color: #232323;
+}
+.cueat_main_img {
+  background: url(../images/cueat_main001.png) center center / 100% auto
+    no-repeat;
+  width: 60%;
+  height: 70%;
+  object-fit: cover;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.cueat_description {
+  width: 60%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #232323;
+  opacity: 0.6;
+  word-break: break-all;
+  line-height: 1.5;
+}
+.cueat_002 {
+  width: 100%;
+  height: 100vh;
+  background: #ffcc91;
+}
+.cueat_001_container {
+  width: 100%;
+  height: 100%;
+}

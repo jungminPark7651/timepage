@@ -1,0 +1,22 @@
+{
+  "name": "timepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jungminPark7651/timepage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jungminPark7651/timepage/issues"
+  },
+  "homepage": "https://github.com/jungminPark7651/timepage#readme",
+  "dependencies": {
+    "locomotive-scroll": "^4.1.4"
+  }
+}

@@ -1,290 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <title>jmpf</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-        <meta http-equiv="Content-Style-Type" content="text/css">
-        <meta http-equiv="Content-Script-Type" content="text/javascript">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="apple-mobile-web-app-title" content="">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-        <script src="../../js/jquery-3.5.1.min.js"></script>
-        <link rel="stylesheet" href="css/ui.css" />
-    </head>
-    <body>
-        <section class="cueat001 wh_bg">
-            <div class="cueat_circle_ani">
-                <div class="cueat_green_circle"></div>
-                <div class="cueat_yellow_circle"></div>
-                <div class="cueat_purple_circle"></div>
-                <div class="cueat_orange_circle"></div>
-                <div class="cueat_red_circle"></div>
-            </div>
-            <div class="cueat001_div">
-                <div class="cueat001_text_container">
-                    <div class="cueat001_title">나에게 딱 맞는<br>
-                        <span class="cueat001_red">농산물 소비의 시작</span></div>
-                    <div class="cueat001_desc">양도, 맛도, 영양도<br>
-                        나에게 딱 맞는 농산물을 만나보세요</div>
-                    <!-- <div class="cueat001_button"><button>바로가기</button></div> -->
-                </div>
-                <div class="cueat001_visual">
-                    <div class="cueat001_main_visual">
-                        <img src="images/cueat001.png">
-                    </div>
-                    <div class="cueat_circle"></div>
-                </div>
-            
-            </div>
-        </section>
-        <section class="cueat002_section cueat_yellow_bg">
-            <div class="cueat_wrap">
-                <div class="cueat_flex_right">
-                    <img src="images/cueat002_character.png" alt="">
-                    <div class="cueat002_text_container">
-                        <div class="cueat_apple_title">사과는 왜 한 개씩 팔지 않을까요?</div>
-                        <div class="cueat_text">집 앞 슈퍼마켓이나 대형마트에 가도, <br>온라인으로 주문을 할 때도 항상 대량으로밖에 팔지 않아서 구매를 망설이게 됩니다.<br>
-                            <br>
-                            '혼자 먹기에는 방울토마토 양이 많아 이번에도 버리게 되면 어쩌지...'<br>
-                            '골고루 조금씩 맛보고 싶은데 포도는 3송이씩 사야하네...'<br>
-                            '10키로 짜리 쌀은 너무 커서 보관할 곳도 없고, 벌레가 생기면 어쩌지...'<br>
-                            '시금치도 싱싱할 때 조금씩 요리를 해먹고 싶은데 한 단 밖에 안 파니...'</div>
-                    </div>
-                </div>
-            </div>
-            <div class="cueat002_bg">
-                <img src="images/cueat002_bg.png" alt="">
-            </div>
-        </section>
-        <section class="cueat003">
-            <div class="cueat003_container">
-            <div class="cueat003_left">
-                <div class="cueat_logo">
-                    <img src="images/cueat_logo.png" alt="">
-                </div>
-                <div class="cueat003_title">
-                    Curation & Eat<br>
-                    식생활을 큐레이션 합니다
-                </div>
-                <div class="cueat003_desc">
-                    고객의 라이프스타일을 분석하여 농산물을 추천해 드리는
-                    농산물 큐레이션 정기구독 서비스입니다<br><br>                    
-                    쌀, 잡곡, 과일, 채소 필요하고 좋아하는 것만 담아<br>
-                    매주 찾아 갑니다</div>
-            </div>
-            <div class="cueat003_right">
-                <div class="cueat003_main">
-                    <img src="images/cueat003_main.png" alt="">
-                </div>
-                <div class="cueat_yellow_circle_wave">
-                    <img src="images/cueat_yellow_circle.svg" alt="">
-                </div>
-            </div>
+  <head>
+    <title>cueat</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
+    />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/cueat.css" />
+  </head>
+  <body>
+    <section class="cueat_001">
+      <div class="cueat_001_container">
+        <div class="cueat_text">
+          <div class="cueat_logo"></div>
+          <div class="cueat_title">
+            <div class="cueat_title_bold">당신의 식생활을</div>
+            <div class="cueat_title_regular">큐레이션 합니다</div>
+          </div>
+          <div class="cueat_description">
+            고객의 라이프스타일을 분석하여 농산물을 추천해 드리는 농산물
+            큐레이션 정기구독 서비스입니다<br />쌀, 잡곡, 과일, 채소 좋아하는
+            것만 담아 매주 찾아갑니다
+          </div>
         </div>
-        </section>
-        <section class="cueat004">
-            <div class="cueat004_wrap">
-            <div class="cueat004_wrap_title">Service Key features</div>
-            <div class="cueat004_text_container">
-                <div class="cueat004_title">쉽게 본인의 식습관을 알 수 있도록</div>
-                <div class="cueat004_desc">많은 사람들이 농산물을 합리적으로 구매하고<br>
-                    소비하는 습관을 통해 더욱더 편리하고 건강한 라이프스타일을 누리기 원합니다<br>
-                    나아가서 이 땅에 태어나 버려지고 낭비되는 농산물이 제로가 되길 원합니다</div>
-            </div>
-            <div class="cueat004_point_container">
-                <div class="cueat004_point">
-                    <div class="cueat004_point_style">Point1</div>
-                    <div class="point_yellow_box">
-                        <div class="yellow_box_curation">Curation1</div>
-                        <div class="yellow_box_title">소비량 추천</div>
-                        <div class="yellow_box_desc">소비패턴을 파악하여<br>
-                            매주 필요한 만큼만<br>
-                            딱 맞게 보내드려요
-                        </div>
-                    </div>
-                </div>
-                <div class="cueat004_plus">+</div>
-                <div class="cueat004_point">
-                    <div class="cueat004_point_style">Point2</div>
-                    <div class="point_yellow_box">
-                        <div class="yellow_box_curation">Curation2</div>
-                        <div class="yellow_box_title">품종 추천</div>
-                        <div class="yellow_box_desc">큐잇이 추천하는<br>
-                        다양한 품종을 경험하면,<br>
-                        나에게 꼭 맞는 품종을<br>
-                        만나게 될 거에요</div>
-                    </div>
-                </div>
-                <div class="cueat004_plus">+</div>
-                <div class="cueat004_point">
-                    <div class="cueat004_point_style">Point3</div>
-                    <div class="point_yellow_box">
-                        <div class="yellow_box_curation">Curation3</div>
-                        <div class="yellow_box_title">경험 추천</div>
-                        <div class="yellow_box_desc">큐잇의 농산물 정기구독은<br>
-                        나에게 꼭 필요한<br>
-                        농산물과 양을 추천합니다</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-        <section class="cueat005">
-            <div class="cueat004_wrap_title">큐잇이 고객님을 찾아가는 과정</div>
-            <div class="cueat005_img">
-                <img src="images/cueat005_course.png" alt="">
-            </div>
-
-        </section>
-        <section class="cueat006">
-            <div class="cueat004_wrap">
-            <div class="cueat004_wrap_title">Curation eat</div>
-            <div class="cueat004_text_container">
-                <div class="cueat004_title">구독서비스</div>
-                <div class="cueat004_desc">큐잇의 구매 경험이 좀 더 특별한 경험이 될 수 있도록,<span class="mo_no">
-                    큐레이터가 설문조사를 해서 나에게 딱 맞는 서비스를 받아봐요</span>
-            </div></div>
-            <div class="cueat006_course"><img src="images/cueat006_course.svg" alt=""></div>
-            <div class="swiper-container mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide slide01">
-                      <img src="images/cueat_swiper001.png" alt="">
-                  </div>
-                  <div class="swiper-slide slide02">
-                    <img src="images/cueat_swiper002.png" alt="">
-                  </div>
-                  <div class="swiper-slide slide03">
-                    <img src="images/cueat_swiper003.png" alt="">
-                  </div>
-                  <div class="swiper-slide slide04">
-                    <img src="images/cueat_swiper004.png" alt="">
-                  </div>
-                  <div class="swiper-slide slide05">
-                    <img src="images/cueat_swiper005.png" alt="">
-                  </div>
-                </div>
-            </div>
-        </div>
-        </section>
-        <section class="cueat007">
-            <div class="cueat007_container">
-            <div class="cueat007_div">
-                <div class="cueat007_title">메인화면</div>
-                <img src="images/cueat006_course_001.png" alt="">
-            </div>
-            <div class="cueat007_div">
-                <div class="cueat007_title">마이페이지</div>
-                <img src="images/cueat006_course_002.png" alt="">
-            </div>
-            <div class="cueat007_div">
-                <div class="cueat007_title">설문조사</div>
-                <img src="images/cueat006_course_003.png" alt="">
-            </div>
-            <div class="cueat007_div">
-                <div class="cueat007_title">리뷰및 탈퇴</div>
-                <img src="images/cueat006_course_004.png" alt="">
-            </div>
-        </div>
-        </section>
-        <section class="cueat008">
-            <div class="cueat004_wrap_title">Curation eat</div>
-            <div class="cueat004_text_container">
-                <div class="cueat004_title">큐잇 고객 이야기</div>
-                <div class="cueat004_desc">더 이상 밤늦게 피곤한데 내일 먹을 농산물을 주문하느라 시간을 보내지 않아도 되고, 
-                    <span class="mo_no">
-                 더 이상 다 먹지도 못할 많은 양을 구매하여 남기거나 버리지 않아도 된다는 것을.</span>
-            </div>
-        </div>
-        <div class="cueat008_cueat_review_wrap">
-            <div class="cueat008_img"><img src="images/cueat008_img.png" alt=""></div>
-            <div class="cueat008_text_container">
-                <div class="cueat008_title"><span class="orange_title">9,312명</span>이
-                    <span class="mo_no">큐잇의 큐레이션을 받았어요</span></div>
-                <div class="cueat008_desc">나에게 꼭 맞는 큐잇박스를 알아보세요</div>
-            </div>
-        </div>
-        <div class="cueat008_review_container">
-            <div class="cueat008_review_wrap">
-                <div class="cueat008_chip">
-                    <div>30대 여성</div>
-                    <div>1인가구</div>
-                    <div>2회차 구독</div>
-                </div>
-                <div class="cueat_review_text"> 회사 명절선물로 알게된 
-                    그때 너무 만족해서 구독 고민하다 이번에 기회가 되서
-                    구독 신청했는데 역시 기대이상! 너무 만족스럽다🤗
-                    농산물 정기구독 서비스인데 주에 한번씩 이렇게
-                    배송된다.
-                    구성도 생각보다 알차고 과일과 채소 비율도 괜찮고,
-                    그 제품의 설명스티커까지 뭔가 정성스러워!적극추천🙌 🙌🙌
-                </div>
-            </div>
-            <div class="cueat008_review_wrap">
-                <div class="cueat008_chip">
-                    <div>30대 여성</div>
-                    <div>2인가구</div>
-                    <div>4회차 구독</div>
-                </div>
-                <div class="cueat_review_text">#큐잇 #과일채소구독 #식생활큐레이션
-                    물리적인 시간이 부족해 식단으로 비타민을
-                    미리 준비할 수가 없었는데, 과일과 채소룰 한번에
-                    이렇게 보내주셔서, 당분간 평일엔 열심히 과일
-                     섭취하고 주말엔 가니쉬랑 함께 고기파티도 해보려구요
-                     포장 뜯는데 벌써 달달하니 맛있네요
-                </div>
-            </div>
-            <div class="cueat008_review_wrap">
-                <div class="cueat008_chip">
-                    <div>20대 여성</div>
-                    <div>1인가구</div>
-                    <div>8회차 구독</div>
-                </div>
-                <div class="cueat_review_text"> 2021년 7월 첫 구독하고 마음에 들어서 
-                    계속 이용중인 #큐잇
-                    우리집에 먹을게 많을 때는 주소를 바꿔서 
-                    다른
-                    주소로 보내 서프라이즈 선물 주기도 최고 *.*
-                    
-                </div>
-            </div>
-            <div class="cueat008_review_wrap">
-                <div class="cueat008_chip">
-                    <div>30대 여성</div>
-                    <div>3인가구</div>
-                    <div>4회차 구독</div>
-                </div>
-                <div class="cueat_review_text">코로나 때문에 마트 장보러 가기도 꺼려지는 시기에
- 
-                    다행히도 #큐잇 때문에 직접 장보러 안가도 어찌 아는지
-                    내가 필요한것만 쏙쏙 담아서 보내주신다 👍
-                     과일 요거저거 다양하게 먹을 수 있고 소분된 야채들로
-                    반찬해서 남김없이 먹고 매번 많이 사가지고 상해서
-                    버리는 일도 다반사였는데 
-                     @cueat_official 감사합니다❤️
-                </div>
-            </div>
-        </div>
-        </section>
-        <section class="cueat009">
-            <div class="cueat009_container">
-                <div class="cueat009_left">
-                    <img src="images/cueat009_001.png" alt="">
-                </div>
-                <div class="cueat009_right">
-                    <div class="cueat009_top">
-                        <img src="images/cueat009_002.png" alt="">
-                    </div>
-                    <div class="cueat009_bottom">
-                        <img src="images/cueat009_003.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-   
+        <div class="cueat_main_img"></div>
+      </div>
+    </section>
+    <section class="cueat_002"></section>
     <script src="js/swiper.js" defer></script>
-    </body>
+  </body>
 </html>
