@@ -1,6 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
 * {
   box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
 }
 .cueat_001 {
   width: 100%;
@@ -8,59 +15,69 @@
   background: #ffe54d;
 }
 .cueat_001_container {
-  width: 1596px;
+  width: 120rem;
   margin: 0 auto;
 }
-.cueat_text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  position: absolute;
-  top: 140px;
+.cueat_001 .cueat_text {
+  top: 12rem;
+  position: relative;
+  text-align: center;
 }
 .cueat_logo {
-  width: 252px;
-  height: 54px;
+  width: 12rem;
+  height: 5.4rem;
   background: url(../images/cueat_logo.png) center center / 100% auto no-repeat;
   object-fit: cover;
+  position: relative;
+  top: 6rem;
 }
 .cueat_title_bold {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.4;
   color: #232323;
 }
 .cueat_title_regular {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 300;
   color: #232323;
 }
 .cueat_main_img {
   background: url(../images/cueat_main001.png) center center / 100% auto
     no-repeat;
-  width: 60%;
-  height: 70%;
+  width: 50%;
+  height: 60%;
   object-fit: cover;
   position: absolute;
-  right: 5%;
+  left: 50%;
   bottom: 5%;
+  transform: translate(-50%, 0%);
 }
 
-.cueat_description {
-  width: 60%;
-  font-size: 16px;
-  font-weight: 400;
-  color: #232323;
-  opacity: 0.6;
-  word-break: break-all;
-  line-height: 1.5;
-}
 .cueat_002 {
   width: 100%;
   height: 100vh;
   background: #ffcc91;
 }
-.cueat_001_container {
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 8px;
+  }
+  .cueat_logo {
+    top: 3rem;
+  }
+  .cueat_001_container {
+    width: 100%;
+    padding: 1.6rem;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .cueat_001 .cueat_text {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cueat_main_img {
+    width: 130vw;
+  }
 }
